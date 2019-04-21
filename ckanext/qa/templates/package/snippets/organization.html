@@ -2,12 +2,10 @@
 
 {% block info %}
     {{ super() }}
-
     {% block package_openness %}
         {% if c.pkg_dict %}
             {{ h.qa_openness_stars_dataset_html(c.pkg_dict) }}<br>
         {% endif %}
     {% endblock %}
-
 {% endblock %}
 
