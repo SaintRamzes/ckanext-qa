@@ -20,10 +20,10 @@ reason - A reason why the dataset doesn't have a rating.
         {%- for index in range(5-stars) -%}
             <div class="stars-list__item">{{ star_list[index+stars] }}</div>
         {%- endfor -%}
-        {%- if stars == 0 -%}
+{#        {%- if stars == 0 -%}#}
             {# 0 stars looks awfully like 5 stars, so be explicit #}
-            {{ _("{0} out of {1}").format(stars, 5) }}
-        {%- endif -%}
+{#            {{ _("{0} out of {1}").format(stars, 5) }}#}
+{#        {%- endif -%}#}
     </div>
 {%- endif -%}
 {#</div>#}
